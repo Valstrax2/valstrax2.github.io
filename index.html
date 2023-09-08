@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>一个平平无奇的主页</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/clock.css"/>
+		<link type='text/css' rel="stylesheet"  href='./css/tongyao_player-1.1.css' />
+		<script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
+		<script type='text/javascript' src='js/tongyao_player-1.1.js'></script>
+	</head>
+	<body >
+		<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+		<div id="container" class="div0" >
+			<div id="header" class="header" >
+				
+				<div>
+					<div id="clock" class="clock" >
+						<script src="js/clock.js"></script>
+					</div>
+					<div>
+						<br><p>&nbsp;&nbsp;&nbsp;&nbsp;<span id="current-date" class="date"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="current-day" class="date"></span></p>
+					</div>
+				</div>
+				
+			</div> 
+			
+			<div id="neck" class="neck">				
+				    <div class="content">
+				        <div class="so">
+				            <form method="get" class="form" action="https://www.baidu.com/s" target="_blank">
+				                <div class="search-type" id=""></div>
+				                <script>
+				                    function elemEngine(engImg, engForm, engName) {
+				                        $(".search-type").attr("id", engImg);
+				                        $(".form").attr("action", engForm);
+				                        $("#search-text").attr("name", engName);
+				                    }
+				                    function switEngine(nameEngine) {
+				                        switch (nameEngine) {
+												case "baidu":
+				                                default:
+				                                elemEngine("Enbaidu", "https://www.baidu.com/s", "wd");
+				                                break;
+				                        }
+				                    }
+				                    $(function () {
+				                        switEngine(localStorage.getItem("isEnginetype"));
+				                    });
+				                </script>
+				                <div id="engine" style="display:none;">
+				                  
+				                </div>
+				                <input type="text" class="field" id="search-text" style="outline:0;color:#ffffff;" maxlength="2048" placeholder="输入关键词进行搜索…" autofocus="autofocus" autocomplete="off" value="" name="wd">
+				                <div class="delete" style="display:none;"></div>
+				                <button type="submit" class="submit" id="submit" ></button>
+				                <ul id="Sugword" style="display:none;"></ul>
+				            </form>
+				        </div>
+				    </div>				
+			</div>
+			
+			<div id="body" class="body">
+				<div id="body-r" class="body-r" >
+					<div id="r1" class="hitokoto">
+						<div class="icon">
+							<img src="img/self.jpg" class="img-self"/><p class="self">&nbsp;&nbsp;&nbsp;&nbsp;ChenJiamin</p>
+						</div>
+						
+						<div class="contact">										
+							<a href="https://space.bilibili.com/34394208" target="_blank"><img src="img/bilibili.png" class="linkicon" /></a>
+							<a href="https://github.com/Valstrax2" target="_blank"><img class="linkicon" src="img/github.png"/></a>
+							<a href="https://wpa.qq.com/msgrd?v=3&uin=2641700592&site=qq&menu=yes" target="_blank"><img class="linkicon" src="img/qq.png"/></a>
+							<a href="mailto:2641700592@qq.com" target="_blank"><img class="linkicon" src="img/email.png"/></a>	
+						</div>
+						
+					</div>
+					<div id="r2" class="normaltext">
+						<p><br>精通电脑开关机，各种软件的打开、安装与卸载操作，会熟练使用usb接口的插拔操作。</p>
+						<p class="right">摆摆摆摆摆<br>我是超级摆烂王</p>
+					</div>
+				</div>
+				
+				<div id="body-l" class="body-l" >
+					<div id="l1" class="hitokoto" >
+						<p id="hitokoto" style="margin: 0;padding: 0;">
+						  <a href="#" id="hitokoto_text" >:D 获取中...</a>
+						</p>
+						<div><p style="margin: 0;padding: 0;text-align: right;">----一言</p></div>
+					</div>
+					<div id="l2" class="normaltext" style="align-items: center; ">
+						<div id='tongyao-music'>
+							<iframe id="tongyao-iframe" frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="http://music.163.com/outchain/player?type=0&amp;id=8718341506&amp;auto=0&amp;height=90"></iframe>
+							<div id="tongyao-left">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				<p class="foottext">
+				<!-- <script>
+				    document.write("© by Valstrax 2023 -"+ (new Date()).getFullYear())
+				</script> -->© by Valstrax&nbsp;&nbsp;&amp;&nbsp;								
+				🔒<a href="https://beian.miit.gov.cn/">暂未备案</a>
+				</p>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
